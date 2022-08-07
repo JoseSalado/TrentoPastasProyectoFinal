@@ -1,0 +1,64 @@
+.headerIndex{
+    margin-bottom: 3rem;
+    padding: 5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(148, 202, 148) ;
+}
+
+.mainIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 8rem;
+    margin-bottom: 4rem;
+    border-bottom: 3px solid rgb(148, 202, 148) ;
+
+}
+.masVendido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-family: "Lobster";
+}
+
+.sectionIndex{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 3px solid rgb(148, 202, 148) ;
+    
+    .tarjetaIndex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+       height: auto;
+       border-radius: 5px;
+        border: solid 2px rgb(148, 202, 148);
+        background-color: rgb(148, 202, 148);
+        color:white;
+
+        
+   
+
+    }
+    .imgIndex{
+        width: 100%;
+
+        
+    }
+    .btnIndex{
+        padding: 0 10px;
+        border-radius: 10px;
+        border-color:rgb(148, 202, 148) ;
+        margin: 5px;
+        background-color: rgb(223, 222, 222);
+    }
+
+
+}

@@ -1,0 +1,57 @@
+.headerProductos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 3rem;
+    
+    font-family: "Lobster";
+    .font{
+        font-size: 45px;
+    
+    }
+}
+
+.mainProductos{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    border-bottom: 3px solid rgb(148, 202, 148) ;
+    background-color: rgb(235, 235, 235);
+    
+    .tarjetaProductos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        width: 15%;
+        border: solid 2px rgb(148, 202, 148);
+        background-color: rgb(148, 202, 148);
+        color:white;
+        
+       
+        
+        
+   
+
+    }
+    .imgProductos{
+        width: 100% ;
+        
+    }
+    .btnProductos{
+        padding: 0 10px;
+        border-radius: 10px;
+        border-color:rgb(148, 202, 148) ;
+        margin: 5px;
+        background-color: rgb(223, 222, 222);
+    }
+    
+}
+
+
+
