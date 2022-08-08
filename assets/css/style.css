@@ -166,7 +166,7 @@
   background-color: rgb(223, 222, 222);
 }
 .mainProductos .btnProductos:hover, .mainProductos .btnProductos:focus {
-  background: rgb(111, 153, 91);
+  background: rgb(82, 165, 158);
   color: #FFF;
   transition: background-color 0.5s ease-out;
   outline: 0;
