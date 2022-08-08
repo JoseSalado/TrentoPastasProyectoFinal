@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/trento.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Productos</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light mb-4 "  style="background-color:rgb(148, 202, 148);" >
+    <nav class="navbar navbar-expand-lg navbar-light mb-4 "  style="background-color: #85FFBD;
+    background-image: linear-gradient(0deg, #85FFBD 31%, #7dffd0 100%);" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img  src="../assets/img/trento.png" width="54px" alt=""></a>
           
@@ -20,20 +22,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto fs-3   ">
+            <ul class="navbar-nav mx-auto fs-5   ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactos.html">Contactos</a>
+                <a class="nav-link" href="./contactos.html">CONTACTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a> 
+                <a class="nav-link" href="./nosotros.html">NOSOTROS</a> 
               <li class="nav-item">
-                <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+                <a class="nav-link" href="./ubicacion.html">UBICACION</a>
               </li>
              
             </ul>
@@ -48,7 +50,7 @@
     </header>
 
 
-    <main class="mainProductos"> 
+    <main data-aos="fade-up" class="mainProductos"> 
      
       <div class="tarjetaProductos">
         <img class="imgProductos" src="../assets/img/sorrentinosVenta.png" alt="">
@@ -86,7 +88,7 @@
        <h4 class="headerProductos">Ravioles</h4>
     </div>
 
-    <section class="mainProductos">
+    <section data-aos="fade-up" class="mainProductos">
         
       
 
@@ -124,10 +126,10 @@
     <h4 class="headerProductos">Fideos Largos</h4>
  </div>
 
- <section class="mainProductos">
+ <section data-aos="fade-up" class="mainProductos">
   <article class="tarjetaProductos">
     <div><img class="imgProductos" src="../assets/img/3418.png" alt=""></div>
-    <h5>Spaghettis x500gr</h4>
+    <h5>Tallarines x500gr</h4>
     <h5>Huevo  </h5>
     <h6>$350</h6>
     <button class="btnProductos">Comprar</button>
@@ -137,21 +139,36 @@
 
  <footer class="footer">
   <img class="imgFooter" src="../assets/img/trento.png" alt="">
-        
-  <h5>© 2022 Trento pastas, todos los derechos reservados</h5>
-  
-  <div class="imgRedes">
-    <div class="logoFace"><img src="../assets/img/face-01.png" alt=""></div>
     
-    <div class="logoInsta"><img src="../assets/img/insta-01.png" alt=""></div>
-    <div clas ="logoTwiter"> <img src="../assets/img/twit-01.png" alt=""></div>
-  </div>
-
+    <h5 class="textoFooter">© 2022 Trento pastas, todos los derechos reservados</h5>
+    
+    <div class="imgRedes">
+      <div class="logoFace">
+        <a href="https://www.facebook.com/Trentopastafresca" target="_blank">
+          <img src="../assets/img/face-01.png" alt=""  >
+        </a>
+       </div>
+      
+      <div class="logoInsta">
+        <a href="https://www.instagram.com/trento.pastas19/" target="_blank">
+          <img src="../assets/img/insta-01.png" alt=""></div>
+        </a>
+        
+      <div clas ="logoTwiter">
+        <a href="https://twitter.com/" target="_blank">
+          <img src="../assets/img/twit-01.png" alt=""></div>
+        </a>
+         
+    </div>
+  
+   
  
-
 </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
  <!-- JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   

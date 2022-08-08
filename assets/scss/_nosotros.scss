@@ -1,0 +1,48 @@
+.headerNosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;    
+    font-family: "Lobster";
+    border-bottom: 3px solid rgb(182, 207, 182) ;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    .fontNosotros{
+        font-size: 45px;
+    }
+    
+}
+
+.mainNosotros{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: #85FFBD;
+ background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
+
+}
+.fontNosotros{
+    
+    font-size: 45px;
+}
+   
+.parrafoNosotros{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+   justify-content: center;
+   .textoNosotros{
+    font-size: 24px;
+    font-family: "Mouse Memoirs";
+   }
+  
+   
+  }
+  
+  
+    

@@ -1,0 +1,96 @@
+.headerContactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: "Lobster";
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid rgb(182, 207, 182) ;
+    
+}
+
+.MainContactanos{
+    
+    color:#FFF;
+    font-family: 'Quicksand', sans-serif;
+    
+    .TextoContactanos{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 3em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    .ContenidoContactanos{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .2em;
+        .ContenedorContenedoresContactanos{
+            padding: .6em;
+            .FormularioContacto{
+                background-color: #222222;
+                padding: .3em;
+                form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .Bloque1{
+                        grid-column: 1 / 3;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 1em;
+                    }
+                    button, input, textarea{
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid rgb(182, 207, 182) ;
+                        outline: none;
+                        color: #FFF;
+                    }
+                    button{
+                        background-color: rgb(182, 207, 182) ;
+                        border: 0;
+                        text-transform: uppercase;
+                        padding: 1em;
+                        color: rgb(44, 44, 44);
+                        &:hover, &:focus{
+                            background: rgb(82, 165, 158);;
+                            color: #FFF;
+                            transition: background-color 0.5s ease-out;
+                            outline: 0;
+                        }
+                    }
+                }
+                textarea{
+                    resize: none;
+                }
+                h3{
+                    margin: 1.2rem;
+                }
+            }
+            .InformacionContacto{
+                background-color: #000;
+                padding: 2.2rem;
+                h4{
+                    padding: 3rem 0rem;
+                }
+                h4, ul, p{
+                    text-align: center;
+                    margin: 0 0 1rem 0;
+                }
+                ul{
+                    list-style: none;
+                    padding-right: 32px;
+                    li{
+                        padding:.3rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

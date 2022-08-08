@@ -1,16 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Joan&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
 .footer {
   display: flex;
-  justify-content: space-between;
+  /*background-color: rgb(212, 207, 207);*/
+  background-color: #85FFBD;
+  background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
+  flex-direction: column;
+  justify-content: center;
   padding: 0 10rem;
   align-items: center;
   padding-bottom: 2rem;
 }
+.footer .textoFooter {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 1rem;
+}
 .footer .imgRedes {
   display: flex;
+  margin: 2rem;
+  margin-top: 2rem;
 }
 .footer .imgFooter {
   width: 54px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 * {
@@ -23,17 +39,32 @@
   margin-bottom: 3rem;
   padding: 5px;
   padding-bottom: 20px;
-  border-bottom: 3px solid rgb(148, 202, 148);
+  border-bottom: 3px solid rgb(182, 207, 182);
 }
 
 .mainIndex {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
   padding: 0 8rem;
   margin-bottom: 4rem;
-  border-bottom: 3px solid rgb(148, 202, 148);
+  border-bottom: 3px solid rgb(182, 207, 182);
+}
+.mainIndex .textoIndex {
+  width: 100%;
+}
+.mainIndex .textoIndex .tituloIndex {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem;
+  font-family: "Caveat";
+  font-size: 46px;
+}
+.mainIndex .textoIndex .parrafoIndex {
+  font-family: "Caveat";
+  font-size: 24px;
 }
 
 .masVendido {
@@ -46,32 +77,48 @@
 
 .sectionIndex {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 3px solid rgb(148, 202, 148);
+  border-bottom: 3px solid rgb(182, 207, 182);
 }
 .sectionIndex .tarjetaIndex {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
   align-items: center;
-  width: 15%;
-  height: auto;
+  width: 45%;
+  margin-bottom: 3rem;
   border-radius: 5px;
-  border: solid 2px rgb(148, 202, 148);
-  background-color: rgb(148, 202, 148);
-  color: white;
+  border: solid 2px #85FFBD;
+  background-color: #85FFBD;
+  background-image: linear-gradient(0deg, #85FFBD 31%, #7dffd0 100%);
+  color: rgb(77, 74, 74);
 }
-.sectionIndex .imgIndex {
+
+.imgIndex {
   width: 100%;
 }
-.sectionIndex .btnIndex {
+
+.btnIndex {
   padding: 0 10px;
   border-radius: 10px;
   border-color: rgb(148, 202, 148);
   margin: 5px;
   background-color: rgb(223, 222, 222);
+}
+.btnIndex:hover, .btnIndex:focus {
+  background: rgb(82, 165, 158);
+  color: #FFF;
+  transition: background-color 0.5s ease-out;
+  outline: 0;
+}
+
+.imgMainIndex {
+  width: 420px;
 }
 
 .headerProductos {
@@ -88,12 +135,13 @@
 
 .mainProductos {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 3rem 0;
-  border-bottom: 3px solid rgb(148, 202, 148);
+  border-bottom: 3px solid rgb(182, 207, 182);
   background-color: rgb(235, 235, 235);
 }
 .mainProductos .tarjetaProductos {
@@ -101,10 +149,11 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  width: 15%;
-  border: solid 2px rgb(148, 202, 148);
-  background-color: rgb(148, 202, 148);
-  color: white;
+  width: 60%;
+  border: solid 2px #85FFBD;
+  background-color: #85FFBD;
+  background-image: linear-gradient(0deg, #85FFBD 31%, #7dffd0 100%);
+  color: rgb(77, 74, 74);
 }
 .mainProductos .imgProductos {
   width: 100%;
@@ -116,6 +165,12 @@
   margin: 5px;
   background-color: rgb(223, 222, 222);
 }
+.mainProductos .btnProductos:hover, .mainProductos .btnProductos:focus {
+  background: rgb(111, 153, 91);
+  color: #FFF;
+  transition: background-color 0.5s ease-out;
+  outline: 0;
+}
 
 .headerUbicacion {
   display: flex;
@@ -125,17 +180,23 @@
   font-family: "Lobster";
   padding: 2rem;
   margin-bottom: 2rem;
+  border-bottom: 3px solid rgb(182, 207, 182);
 }
 
 .mainUbicacion {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
   width: 100%;
   height: 100%;
   margin-bottom: 4rem;
   padding-bottom: 3rem;
-  border-bottom: 3px solid rgb(148, 202, 148);
+  border-bottom: 3px solid rgb(182, 207, 182);
+  /*background-color: rgb(235, 235, 235);*/
+  background-color: #85FFBD;
+  background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
 }
 
 .tarjetaUbicacion {
@@ -144,7 +205,234 @@
   align-items: center;
   width: 45%;
 }
+.tarjetaUbicacion .tituloUbicacion {
+  font-size: 40px;
+  margin-bottom: 2.5rem;
+  font-family: "Mouse Memoirs";
+}
+.tarjetaUbicacion .parrafoUbicacion {
+  font-family: "Mouse Memoirs";
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.tarjetaUbicacion .mapaUbicacion {
+  width: 450px;
+}
 .tarjetaUbicacion .imgUbicacion {
+  margin-top: 1rem;
   width: 380px;
   height: 289px;
+}
+
+.headerNosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Lobster";
+  border-bottom: 3px solid rgb(182, 207, 182);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.headerNosotros .fontNosotros {
+  font-size: 45px;
+}
+
+.mainNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background-color: #85FFBD;
+  background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
+}
+
+.fontNosotros {
+  font-size: 45px;
+}
+
+.parrafoNosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.parrafoNosotros .textoNosotros {
+  font-size: 24px;
+  font-family: "Mouse Memoirs";
+}
+
+@media (min-width: 600px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionIndex .tarjetaIndex {
+    width: 45%;
+  }
+  .mainUbicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainProductos {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainProductos .tarjetaProductos {
+    width: 45%;
+  }
+  .mainNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .parrafoNosotros {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainIndex .textoIndex .tituloIndex {
+    font-size: 54px;
+  }
+  .mainIndex .textoIndex .parrafoIndex {
+    font-size: 34px;
+    margin-bottom: 4rem;
+  }
+  .sectionIndex {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionIndex .tarjetaIndex {
+    width: 20%;
+  }
+  .mainUbicacion {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainProductos {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainProductos .tarjetaProductos {
+    width: 20%;
+  }
+  .mainNosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .parrafoNosotros {
+    width: 60%;
+    font-size: 45px;
+    text-align: left;
+    padding-right: 5rem;
+  }
+  .parrafoNosotros .textoNosotros {
+    font-size: 40px;
+  }
+}
+.headerContactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: "Lobster";
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid rgb(182, 207, 182);
+}
+
+.MainContactanos {
+  color: #FFF;
+  font-family: "Quicksand", sans-serif;
+}
+.MainContactanos .TextoContactanos {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+.MainContactanos .ContenidoContactanos {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos {
+  padding: 0.6em;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto {
+  background-color: #222222;
+  padding: 0.3em;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form .Bloque1 {
+  grid-column: 1/3;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form p {
+  margin: 0;
+  padding: 1em;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button, .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form input, .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(182, 207, 182);
+  outline: none;
+  color: #FFF;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button {
+  background-color: rgb(182, 207, 182);
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: rgb(44, 44, 44);
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button:hover, .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto form button:focus {
+  background: rgb(82, 165, 158);
+  color: #FFF;
+  transition: background-color 0.5s ease-out;
+  outline: 0;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto textarea {
+  resize: none;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .FormularioContacto h3 {
+  margin: 1.2rem;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto {
+  background-color: #000;
+  padding: 2.2rem;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto h4 {
+  padding: 3rem 0rem;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto h4, .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul, .MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul {
+  list-style: none;
+  padding-right: 32px;
+}
+.MainContactanos .ContenidoContactanos .ContenedorContenedoresContactanos .InformacionContacto ul li {
+  padding: 0.3rem 0rem;
 }

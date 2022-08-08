@@ -1,15 +1,33 @@
 .footer{
     display: flex;
-    justify-content: space-between;
+    /*background-color: rgb(212, 207, 207);*/
+    background-color: #85FFBD;
+ background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
+    flex-direction: column;
+    justify-content: center;
     padding: 0 10rem;
     align-items: center;
     padding-bottom: 2rem;
+    .textoFooter{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        margin-top: 1rem;
+        
+        
+    }
+    
     .imgRedes{
         display: flex;
+        margin: 2rem;
+        margin-top: 2rem;
+        
         
     }
     .imgFooter{
         width: 54px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     
 }

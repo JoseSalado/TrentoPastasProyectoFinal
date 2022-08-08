@@ -15,12 +15,13 @@
 .mainProductos{
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
     margin-bottom: 4rem;
     padding: 3rem 0;
-    border-bottom: 3px solid rgb(148, 202, 148) ;
+    border-bottom: 3px solid rgb(182, 207, 182) ;
     background-color: rgb(235, 235, 235);
     
     .tarjetaProductos{
@@ -28,10 +29,12 @@
         flex-direction: column;
         align-items: center;
         border-radius: 5px;
-        width: 15%;
-        border: solid 2px rgb(148, 202, 148);
-        background-color: rgb(148, 202, 148);
-        color:white;
+        width: 60%;
+        border: solid 2px #85FFBD;
+        background-color: #85FFBD;
+    background-image: linear-gradient(0deg, #85FFBD 31%, #7dffd0 100%);
+        color:rgb(77, 74, 74);
+        
         
        
         
@@ -49,6 +52,12 @@
         border-color:rgb(148, 202, 148) ;
         margin: 5px;
         background-color: rgb(223, 222, 222);
+        &:hover, &:focus{
+            background: rgb(111, 153, 91);
+            color: #FFF;
+            transition: background-color 0.5s ease-out;
+            outline: 0;
+        }
     }
     
 }
