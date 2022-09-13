@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
 .footer {
-  display: flex;
-  /*background-color: rgb(212, 207, 207);*/
+  display: flex;  
   background-color: #85FFBD;
   background-image: linear-gradient(3deg, #85FFBD 32%, #7d9cff 100%);
   flex-direction: column;
